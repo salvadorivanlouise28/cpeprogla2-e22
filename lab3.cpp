@@ -24,11 +24,16 @@ int main ()
 void myStrcpy(char* str1, char* str2){
 	strcpy(str1, str2);
 }
+void myStrCat(char* str1, char* str2){
+	strcpy(str1, str2);
+}
+
 {
 	char str1[100]="Hello";
 	char str2[100]="hello";
 	
 	myStrCmp(str1, str2);
 	myStrCpy(str1, str2);
+        myStrCat(str1, str2);
     cout << myStrCmp(str1, str2);
 }
